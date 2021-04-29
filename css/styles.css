@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;  
+}
+
+body{
+    margin: 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.header-wrapper {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.mainnav-heading {
+    margin-top: 0;
+    color: grey;
+    font-family: 'Merriweather', serif;
+}
+
+.mainnav-list{
+    padding: 0;
+    margin-bottom: 2.5rem;
+    list-style: none;
+}
+
+.mainnav-list a {
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+
+.mainnav-list a:hover{
+    color:rgb(8, 7, 7);
+    font-size: 1.4rem;
+}
+
+.mainnav-list li {
+    padding: .75rem;
+    margin: 0.25rem 0.25rem .75rem;
+    background-color: white;
+    font-weight: bold;
+}
+
+.header-image{
+    max-width: 75%
+}
+
+img {
+    width: 100%;
+}
+
+#portfolio,
+#skills{
+    padding: 1rem;
+}
+
+.card {
+    padding: .5rem;
+    margin: .5rem 0 .5rem;
+}
+
+.cardimage {
+    margin-bottom: 0.25rem;
+}
+
+.card-title {
+    color: rgb(91, 92, 92);
+    font-size: .90rem;
+
+}
+
+.header-description,
+.card-description,
+.skills-description,
+.contact-description,
+.contact-info {
+    padding: 0.5rem;
+    font-family: 'Cario', sans-serif;
+    color: grey;
+    line-height: 1.5;
+    hyphens: auto;
+}
+
+.skills-list {
+    padding: 0;
+}
+
+.skills-list li {
+    padding: .75rem;
+    margin: 1rem;
+    background-color: rgb(223, 223, 210);
+    color: rgb(13, 15, 15);
+    font-weight: bold;
+}
+
+footer {
+    padding: 1rem;
+    margin-top: 2.5rem;
+    background-color: rgb(223, 223, 210);
+}
+
+#contact{
+    margin-bottom: 4rem;
+}
+
+.contact-description {
+    margin-bottom: 2rem;
+}
+
+.contact-info span {
+    font-weight: 600;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color:rgb(144, 146, 140);
+}
+
+.contact-info a:hover {
+    color: #1212138a;
+    font-size: 1.1rem;
+}
+
+.bottomnav {
+    display: flex;
+    border-top: 1px solid #3e423f;
+    align-items: center;
+}
+
+.bottomnav a {
+    text-decoration: none;
+    color: #4c4b4a;
+    font-weight: bold;
+}
+
+.bottomnav a:hover {
+    color: rgb(22, 63, 66);
+    font-size: 1.2rem;
+}
+
+.navheading {
+    margin-right: auto;
+    color: #4c4b4a;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.nav1 {
+    display: none;
+}
+
+.nav2 {
+    display: none;
+}
+
+@media (min-width: 768px){
+  .mainnav,
+  .mainnav-list,
+  .header-intro,
+  .projects,
+  .skills-section,
+  .skills-list,
+  .navlist,
+  .nav2{
+      display: flex;
+  }
+  html {
+      background-color: rgb(223, 223, 210);
+  }
+  .mainnav {
+     flex-direction: column;
+     align-items: center;
+ }
+
+  .mainnav-list li{
+      background-color: transparent;
+  }
+
+  .header-intro {
+      flex-direction: row-reverse;
+      margin-bottom: 2rem;
+  }
+
+  .projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .card {
+      flex: 50%;
+  }
+
+  .card-description {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+
+  .skills-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skills-list {
+      flex-wrap: wrap;
+  }
+
+  .skills-list li {
+      flex: 40%;
+  }
+
+
+  .navlist {
+      justify-content: space-around;
+  }
+
+
+  .nav1 {
+      display: none;
+  }
+
+  .nav2 {
+      display: block;
+      padding: 1rem 0.5rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  html {
+      background-color: rgb(223, 223, 210);
+  }
+
+  .header-wrapper {
+      width: 97%;
+      margin: 0 auto;
+  }
+
+  .mainnav {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .header-description {
+      padding-right: 5rem;
+      font-size: 1.5rem;
+  }
+
+  #skills {
+      margin-top: 4rem;
+  }
+
+  .skills-description {
+      font-size: 1.25 rem;
+  }
+
+  .whiteback {
+      width: 97%;
+      margin: 0 auto;
+      background-color: white;
+  }
+
+  .card {
+      flex: 33%;
+  }
+
+  .skills-section {
+      align-items: stretch;
+  }
+
+  .skills-list li {
+      flex: 25%;
+  }
+
+  .bottomnav {
+      width: 95%;
+      margin: 0 auto;
+  }
+}
