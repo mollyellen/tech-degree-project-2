@@ -1,7 +1,10 @@
-* {
+* 
+{
     box-sizing: border-box;  
 }
-
+html {
+    background-color: rgb(223, 223, 210);
+}
 body{
     margin: 0px;
 }
@@ -157,9 +160,6 @@ footer {
     list-style: none;
 }
 
-.nav1 {
-    display: none;
-}
 
 .nav2 {
     display: none;
@@ -176,13 +176,16 @@ footer {
   .nav2{
       display: flex;
   }
-  html {
-      background-color: rgb(223, 223, 210);
-  }
+  
   .mainnav {
      flex-direction: column;
      align-items: center;
  }
+
+ .nav1 {
+    display: none;
+}
+
 
   .mainnav-list li{
       background-color: transparent;
@@ -239,10 +242,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-
-  html {
-      background-color: rgb(223, 223, 210);
-  }
 
   .header-wrapper {
       width: 97%;
